@@ -5,7 +5,7 @@ public class Horse extends Animal {
         super(name, color);
     }
     @Override
-    void showAnimal(){
+    public void showAnimal(){
         System.out.println("Это лошадь по имени:" + getName() + ", цветом:" + getColor());
     }
 }

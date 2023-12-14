@@ -6,7 +6,7 @@ public class Parrot extends Animal{
     }
 
     @Override
-    void showAnimal(){
+    public void showAnimal(){
         System.out.println("Это попугай по имени:" + getName() + ", цветом:" + getColor());
     }
 }

@@ -30,7 +30,7 @@ public class Animal {
         this.color = color;
     }
 
-    void showAnimal() {
+    public void showAnimal() {
         System.out.println("Это животное по имени : " + name + ", цветом: " + name);
     }
 }

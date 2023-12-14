@@ -6,7 +6,7 @@ public class Cat extends Animal {
     }
 
     @Override
-    void showAnimal(){
+    public void showAnimal(){
         System.out.println("Это кошка по имени:" + getName() + ", цветом:" + getColor());
     }
 }
