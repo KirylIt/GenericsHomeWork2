@@ -1,21 +1,17 @@
 package HomeWork_1;
 
-public class Average <T extends Number>{
-    private T[] array;
+public class Average <T extends Number, V extends Number>{
+    private T number;
+    private V numbers;
 
-    public Average (T[] array){
-        this.array = array.clone();
+    public Average(T number, V numbers) {
+        this.number = number;
+        this.numbers = numbers;
+        System.out.println("Сравнение number & numbers: " + (number.getClass() == numbers.getClass()));
     }
 
-    public double average() {
-        double sum = 0.0;
-
-        for (T value: array) {
-            sum += value.doubleValue();
-        }
-        return sum;
-    }
-    boolean sameAvg(Average<?> ob){
-        return average() == ob.average();
+    public boolean equals(Average obj) {
+        return number.getClass() == obj.number.getClass()
+                && numbers.getClass() == obj.numbers.getClass();
     }
 }
